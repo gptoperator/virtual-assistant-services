@@ -4,35 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Assistant Services</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+        }
+        .services, .pricing, .testimonials, .contact {
+            padding: 20px;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Virtual Assistant Services</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Hire a Virtual Assistant Today!</h1>
+        <p>Save time and boost productivity with expert virtual assistants.</p>
     </header>
-    <main>
-        <section id="services">
+    
+    <div class="container">
+        <section class="services">
             <h2>Our Services</h2>
-            <p>We offer a range of virtual assistant services to help you manage your tasks efficiently.</p>
+            <ul>
+                <li>Administrative Support</li>
+                <li>Data Entry & Management</li>
+                <li>Email & Calendar Management</li>
+                <li>Social Media Assistance</li>
+                <li>Customer Support</li>
+                <li>Content Writing</li>
+                <li>Lead Generation</li>
+            </ul>
         </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Learn more about our team and how we can assist you.</p>
+        
+        <section class="pricing">
+            <h2>Pricing Plans</h2>
+            <p>Hourly and package pricing available. Contact us for a custom quote.</p>
         </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us to discuss your needs.</p>
+        
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <p>"This service has been a game-changer for my business!" - Jane D.</p>
+            <p>"Reliable and efficient virtual assistants. Highly recommend!" - Mark T.</p>
         </section>
-    </main>
+        
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>Email: support@yourvaservice.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Live Chat Available</p>
+            
+            <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    
+    <div class="cta">
+        <a href="#">Get Started Now</a>
+    </div>
+    
     <footer>
-        <p>&copy; 2025 Virtual Assistant Services</p>
+        <p>&copy; 2025 Virtual Assistant Services. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        console.log("Deploying website using GitHub Pages or Netlify.");
+    </script>
 </body>
 </html>
